@@ -1,0 +1,126 @@
+# ========================
+# Виртуальное окружение Python
+# ========================
+.venv/
+venv/
+env/
+ENV/
+
+# Кэш Python
+__pycache__/
+api/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+*.pyc~
+*.py[co]
+
+# ========================
+# Файлы IDE и редакторов
+# ========================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.swp
+.swo
+
+# PyCharm
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ========================
+# Логи, временные и системные файлы
+# ========================
+*.log
+*.pot
+*.sqlite3
+*.db3
+.DS_Store
+Thumbs.db
+
+# Временные папки
+temp/
+tmp/
+.cache/
+
+# ========================
+# Файлы окружения (секреты!)
+# ========================
+.env
+.env.local
+.env.dev
+.env.production
+instance/.env
+backend/instance/.env
+api/static/.env
+
+
+# ========================
+# Статика и сборка (если есть)
+# ========================
+/frontend/node_modules/
+/frontend/dist/
+/static/css/*.css.map
+/static/js/*.js.map
+
+# ========================
+# Базы данных (кроме SQLite, если нужна)
+# ========================
+# ❗ ВАЖНО: удали эту строку, если БАЗА ДОЛЖНА быть в репозитории
+# database/examenator.db  ← ОСТАВЬ, ЕСЛИ НУЖНА
+# Но если база генерируется — игнорируй всю папку:
+/data/
+/database/*.db
+base/
+/database/*.sqlite
+/database/*.db-journal
+
+# ========================
+# Дополнительные файлы Python
+# ========================
+# PyInstaller
+/dist/
+/build/
+*.spec
+
+# setuptools
+*.egg-info/
+.eggs/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ========================
+# Тесты
+# ========================
+.pytest_cache/
+.coverage
+htmlcov/
+.nyc_output
+
+# ========================
+# Ошибки в твоём списке
+# ========================
+# ❌ models/ — НЕ нужно игнорировать! Это твой код!
+# Удали эти строки:
+# .models/
+.data
+# data
+# datadase
+# database
+
+# Модели машинного обучения
+/models/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+
+migrations/*.pyc
+migrations/__pycache__/
